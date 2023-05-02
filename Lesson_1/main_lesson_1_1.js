@@ -1,3 +1,4 @@
+////Завдання №1////
 let s1 = 'hello'
 console.log(s1)
 let s2 = 'owu'
@@ -24,6 +25,18 @@ let n6 = 2.7
 console.log(n6)
 let n7 = 16
 console.log(n7)
+
+////Завдання №2////
+let firstName = 'Iryna'
+let middleName = 'Hubka'
+let lastName = 'Volodymyrivna'
+let user = `${firstName} ${middleName} ${lastName}`
+console.log(user)
+
+////Завдання №3////
+
+
+
 
 
 
