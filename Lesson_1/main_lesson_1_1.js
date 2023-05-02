@@ -1,4 +1,5 @@
 ////Завдання №1////
+
 let s1 = 'hello'
 console.log(s1)
 let s2 = 'owu'
@@ -7,10 +8,6 @@ let s3 = 'com'
 console.log(s3)
 let s4 = 'ua'
 console.log(s4)
-let s5 = 'true'
-console.log(s5)
-let s6 = 'false'
-console.log(s6)
 let n1 = 1
 console.log(n1)
 let n2 = 10
@@ -25,16 +22,27 @@ let n6 = 2.7
 console.log(n6)
 let n7 = 16
 console.log(n7)
+let t1 = true
+console.log(t1)
+let t2 = false
+console.log(t2)
 
 ////Завдання №2////
+
 let firstName = 'Iryna'
 let middleName = 'Hubka'
 let lastName = 'Volodymyrivna'
-let user = `${firstName} ${middleName} ${lastName}`
-console.log(user)
+let person = `${firstName} ${middleName} ${lastName}`
+console.log(person)
 
 ////Завдання №3////
 
+let a = 100;
+console.log(typeof a);
+let b = '100';
+console.log(typeof b);
+let c = true;
+console.log(typeof c);
 
 
 
