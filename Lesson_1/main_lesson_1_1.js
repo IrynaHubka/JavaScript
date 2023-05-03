@@ -44,7 +44,12 @@ console.log(typeof b);
 let c = true;
 console.log(typeof c);
 
+// Додаткове завдання:
+// - За допомогою 3х різних prompt() отримати 3 слова які являються вашими Імям, По-Батькові та роками. та вивести в консоль
 
-
-
-
+let name = prompt('Enter your name');
+console. log(name);
+let lastN = prompt('Enter your lastName');
+console.log(lastN);
+let age = prompt('Enter your age');
+console.log(age);
