@@ -51,5 +51,6 @@ let name = prompt('Enter your name');
 console. log(name);
 let lastN = prompt('Enter your lastName');
 console.log(lastN);
-let age = prompt('Enter your age');
-console.log(age);
+let age = + prompt('Enter your age');
+console.log (age);
+console.log(typeof age);
