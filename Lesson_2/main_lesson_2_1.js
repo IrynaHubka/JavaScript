@@ -1,7 +1,7 @@
 // Масиви та об'єкти:
 // - Створити масив, наповнити його 10 елементами будь-якого типу, вивести кожен елемент в консоль
 let box = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-console.log (box);
+console.log(box);
 console.log(box[0]);
 console.log(box[1]);
 console.log(box[2]);
@@ -12,7 +12,27 @@ console.log(box[6]);
 console.log(box[7]);
 console.log(box[8]);
 console.log(box[9]);
+
 // - Створити 3 об'єкти які описують книги. Поля об'єкту : title ,pageCount, genre.
+
+let book_A = {
+    title: 'Flowers',
+    pageCount: 520,
+    genre: 'scientific'
+}
+
+let book_B = {
+    title: 'Trees',
+    pageCount: 200,
+    genre: 'scientific'
+    }
+
+let book_C = {
+    title: 'Bushes',
+    pageCount: 300,
+    genre: 'scientific'
+    }
+
 // - Створити 3 об'єкти які описують книги. Поля об'єкту : title ,pageCount, genre, authors. Поле "автори" - являється  масивом. Кожен автор має поля name та age.
 // - Створити масив з 10 об'єктами які описують сутніть "користувач". Поля: name, username,password. Вивести в консоль пароль кожного користувача
 //
