@@ -15,26 +15,51 @@ console.log(box[9]);
 
 // - Створити 3 об'єкти які описують книги. Поля об'єкту : title ,pageCount, genre.
 
-let book_A = {
+let bookA = {
     title: 'Flowers',
     pageCount: 520,
     genre: 'scientific'
 }
 
-let book_B = {
+let bookB = {
     title: 'Trees',
     pageCount: 200,
     genre: 'scientific'
     }
 
-let book_C = {
+let bookC = {
     title: 'Bushes',
     pageCount: 300,
     genre: 'scientific'
     }
 
 // - Створити 3 об'єкти які описують книги. Поля об'єкту : title ,pageCount, genre, authors. Поле "автори" - являється  масивом. Кожен автор має поля name та age.
+
+let book1 = {
+    title: 'Flowers',
+    pageCount: 520,
+    genre: 'scientific',
+    authors: ['name', 'age']
+}
+
+let book2 = {
+    title: 'Trees',
+    pageCount: 200,
+    genre: 'scientific',
+    authors: ['name', 'age']
+}
+
+let book3 = {
+    title: 'Bushes',
+    pageCount: 300,
+    genre: 'scientific',
+    authors: ['name', 'age']
+}
+
 // - Створити масив з 10 об'єктами які описують сутніть "користувач". Поля: name, username,password. Вивести в консоль пароль кожного користувача
+
+
+
 //
 //
 // Логічні розгалуження:
