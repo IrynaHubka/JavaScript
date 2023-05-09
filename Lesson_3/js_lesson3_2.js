@@ -24,8 +24,8 @@ document.write('<ul>');
 for (let i = 0; i < listOfItems.length; i++) {
     document.write(`<li>${listOfItems[i]}</li>`);
 }
-
 document.write('</ul>');
+
 //      Є масив
 // let users = [
 //     {name: 'vasya', age: 31, status: false},
