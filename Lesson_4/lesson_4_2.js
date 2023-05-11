@@ -8,7 +8,7 @@ function renderUsers(users) {
         const userName = document.createElement('p');
         const userAge = document.createElement('p');
 
-        userId.textContent = `ID: ${user.id}`;
+        userId.textContent = `Id: ${user.id}`;
         userName.textContent = `Name: ${user.name}`;
         userAge.textContent = `Age: ${user.age}`;
 
@@ -22,9 +22,9 @@ function renderUsers(users) {
     document.body.appendChild(container);
 }
 const users = [
-    { id: 1, name: 'Alice', age: 25 },
-    { id: 2, name: 'Bob', age: 30 },
-    { id: 3, name: 'Charlie', age: 35 },
+    { id: 1, name: 'Anna', age: 25 },
+    { id: 2, name: 'Vova', age: 30 },
+    { id: 3, name: 'Igor', age: 35 },
 ];
 renderUsers(users);
 
