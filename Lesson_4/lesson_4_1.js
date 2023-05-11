@@ -35,17 +35,55 @@ function elements(arr) {
 } let myArray = [1, 2, 3, 4, 5];
 elements(myArray);
 
+/* - створити функцію яка створює параграф з текстом. Текст задати через аргумент */
+function createParagraph(text) {
+    let paragraph = document.createElement("p");
+    paragraph.textContent = text;
+    return paragraph;
+}
+let myText = "Hello World";
+let myParagraph = createParagraph(myText);
+document.body.appendChild(myParagraph);
+
+/* - створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий */
+function createList(text) {
+    let myList = document.createElement("ul");
+    for (let i = 1; i <= 3; i++) {
+        let listItem = document.createElement("li");
+        listItem.textContent = text;
+        myList.appendChild(listItem);
+    }
+    return myList;
+}
+let myWords = "This is life";
+let myList = createList(myWords);
+document.body.appendChild(myList);
 
 
+/* - створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий. Кількість li визначається другим аргументом, який є числовим (тут використовувати цикл) */
+function createListWithItems(text, count) {
+    const ul = document.createElement("ul");
+    for (let i = 0; i < count; i++) {
+        const li = document.createElement("li");
+        li.textContent = text;
+        ul.appendChild(li);
+    }
+    return ul;
+}
+const list = createListWithItems("Text", 3);
+document.body.appendChild(list);
 
-/* - створити функцію яка створює параграф з текстом. Текст задати через аргумент
-- створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий
-- створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий. Кількість li визначається другим аргументом, який є числовим (тут використовувати цикл)
-- створити функцію яка приймає масив примітивних елементів (числа,стрінги,булеві), та будує для них список
-- створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ. Для кожного об'єкту окремий блок.
-- створити функцію яка повертає найменьше число з масиву
-- створити функцію sum(arr)яка приймає масив чисел, сумує значення елементів масиву та повертає його. Приклад sum([1,2,10]) //->13
-- створити функцію swap(arr,index1,index2). Функція міняє місцями заняення у відаовідних індексах
-Приклад  swap([11,22,33,44],0,1) //=> [22,11,33,44]
-- Написати функцію обміну валюти exchange(sumUAH,currencyValues,exchangeCurrency)
-Приклад exchange(10000,[{currency:'USD',value:40},{currency:'EUR',value:42}],'USD') // => 250 */
+/*- створити функцію яка приймає масив примітивних елементів (числа,стрінги,булеві), та будує для них список */
+function createListFromArray(arr) {
+    const ul = document.createElement('ul');
+    for (let i = 0; i < arr.length; i++) {
+        const li = document.createElement('li');
+        li.textContent = arr[i];
+        ul.appendChild(li);
+    }
+    return ul;
+}
+const myBox = [1, "two", true, "four"];
+const bigList = createListFromArray( myBox);
+document.body.appendChild(bigList);
+
