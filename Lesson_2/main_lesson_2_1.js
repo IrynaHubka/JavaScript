@@ -26,86 +26,39 @@ let book1 = {
     title: 'Flowers',
     pageCount: 520,
     genre: 'scientific',
-    authors: ['name', 'age']
-}
+    authors: [{name: 'Jony', age: 25},
+    ],
+};
 
 let book2 = {
     title: 'Trees',
     pageCount: 200,
     genre: 'scientific',
-    authors: ['name', 'age']
-}
+    authors: [{name: 'Lizy', age: 35},
+        ],
+};
 
 let book3 = {
     title: 'Bushes',
     pageCount: 300,
     genre: 'scientific',
-    authors: ['name', 'age']
+    authors: [{name: 'Mark', age: 45},
+    ],
 }
 
 // - Створити масив з 10 об'єктами які описують сутніть "користувач". Поля: name, username,password. Вивести в консоль пароль кожного користувача
 let users = [
-    {
-        name: 'Iryna',
-        username: 'ira',
-        password: 11111
-    },
-
-    {
-        name: 'Igor',
-        username: 'igo',
-        password: 22222
-    },
-
-    {
-        name: 'Svitlana',
-        username: 'svitlo',
-        password: 33333
-    },
-
-    {
-        name: 'Vova',
-        username: 'vov',
-        password: 44444
-    },
-
-    {
-        name: 'Slava',
-        username: 'slav',
-        password: 55555
-    },
-
-    {
-        name: 'Nina',
-        username: 'nino',
-        password: 66666
-    },
-
-    {
-        name: 'Mira',
-        username: 'mir',
-        password: 77777
-    },
-
-    {
-        name: 'Den',
-        username: 'denchik',
-        password: 88888
-    },
-
-    {
-        name: 'Klava',
-        username: 'klavka',
-        password: 99999
-    },
-
-    {
-        name: 'Anna',
-        username: 'ann',
-        password: 10100
-    },
+    {name: 'Iryna', username: 'ira', password: 11111},
+    {name: 'Igor', username: 'igo', password: 22222},
+    {name: 'Svitlana', username: 'svitlo', password: 33333},
+    {name: 'Vova', username: 'vov', password: 44444},
+    {name: 'Slava', username: 'slav', password: 55555},
+    {name: 'Nina', username: 'nino', password: 66666},
+    {name: 'Mira', username: 'mir', password: 77777},
+    {name: 'Den', username: 'denchik', password: 88888},
+    {name: 'Klava', username: 'klavka', password: 99999},
+    {name: 'Anna', username: 'ann', password: 10100},
 ]
-
 console.log(users);
 console.log(users [0]['password']);
 console.log(users [1]['password']);
