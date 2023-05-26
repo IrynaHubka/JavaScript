@@ -1,16 +1,6 @@
 // - Створити масив, наповнити його 10 елементами будь-якого типу, вивести кожен елемент в консоль
 let box = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 console.log(box);
-console.log(box[0]);
-console.log(box[1]);
-console.log(box[2]);
-console.log(box[3]);
-console.log(box[4]);
-console.log(box[5]);
-console.log(box[6]);
-console.log(box[7]);
-console.log(box[8]);
-console.log(box[9]);
 
 // - Створити 3 об'єкти які описують книги. Поля об'єкту : title ,pageCount, genre.
 let bookA = {
