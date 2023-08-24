@@ -54,5 +54,5 @@ console.log(lastN);
 let age = + prompt('Enter your age');
 console.log (age);
 console.log(typeof age);
-console.log()
+
 
