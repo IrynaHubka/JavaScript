@@ -72,4 +72,9 @@ const currencyValues = [
 const sumUAH = 10000;
 const exchangeCurrency = 'USD';
 const sumInExchangeCurrency = exchange(sumUAH, currencyValues, exchangeCurrency);
-console.log(sumInExchangeCurrency);
+console.log(sumInExchangeCurrency)
+
+
+
+
+
