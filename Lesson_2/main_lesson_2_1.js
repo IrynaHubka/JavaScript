@@ -26,7 +26,8 @@ let book1 = {
     title: 'Flowers',
     pageCount: 520,
     genre: 'scientific',
-    authors: [{name: 'Jony', age: 25},
+    authors: [
+        {name: 'Jony', age: 25},
     ],
 };
 
@@ -34,7 +35,8 @@ let book2 = {
     title: 'Trees',
     pageCount: 200,
     genre: 'scientific',
-    authors: [{name: 'Lizy', age: 35},
+    authors: [
+        {name: 'Lizy', age: 35},
         ],
 };
 
@@ -42,7 +44,8 @@ let book3 = {
     title: 'Bushes',
     pageCount: 300,
     genre: 'scientific',
-    authors: [{name: 'Mark', age: 45},
+    authors: [
+        {name: 'Mark', age: 45},
     ],
 }
 
