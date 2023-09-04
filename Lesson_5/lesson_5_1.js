@@ -1,70 +1,100 @@
-// let name1 = 'Iryna';
-// let name2 = 'Hubka';
-// let name3 = 'Vovkina';
-//
-// const result = `${name1} ${name2} ${name3}`;
-// console.log(result);
-// let nom1 = ['name','sssd','sdsdad','asdassad','fdgdffg'];
-// console.log(nom1);
-// let dooks = {
-//     title:'Ann',
-//     page: 127,
-//     genry: "detective",
-//     avtors: [
-//         {name: "Anna",age: 25},
-//     ]
+// - За допомогою циклу for і document.write() вивести 10 блоків div c довільним текстом всередині
+// for (let i = 0; i < 10; i++) {
+//     document.write(`<div> Okten </div>`);
 // }
-// console.log(dooks)
+
+
+// // - За допомогою циклу for і document.write() вивести 10 блоків div c довільним текстом і індексом всередині
+// for(let i= 0; i <=10; i++){
+//     document.write(`<div> ${i} - Okten </div>`);
+// }
+
+// - За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом всередині.
+// let i=0;
+// while(i <= 20) {
+//     document.write(`<h1> My love </h1>`)
+//     i++;
+// }
+// - За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом і індексом всередині.
+// let i = 0;
+// while (i <=20) {
+//     document.write(`<h1> ${i} -My LOve </h1>`);
+//     i++;
+// }
+//
+// - Використовуючи данні з масиву, за допомоги document.write та циклу
+// побудувати структуру по шаблону
+// Масив:
+
+    let listOfItems = ['html', 'css', 'javascript', 'mysql', 'mongodb', 'react', 'angular', 'node.js'];
+
+ШАБЛОН:
+    <ul>
+        <li>listOfItems</li>
+        <!--
+            і тд інші об'єкти масиву
+             ...
+             ...
+             ...
+        -->
+    </ul>
+//
+// замість 'ITEM OF ARRAY' підставити елемент з масиву щоб получився цілий список з даними з масиву
+//
+// -----------------------------------------------
+//
+//     Використовуючи данні з масиву, за допомоги document.write та циклу
+// побудувати структуру по шаблону
+// Великими літерами прописанні властивості об'єкту які потрібно впровадити в шаблон
+//
+// let products = [
+//     {
+//         title: 'milk',
+//         price: 22,
+//         image: 'https://www.mcqueensdairies.co.uk/wp-content/uploads/2019/02/Mcqueens_1litre_whole_organic-300x300-3.jpg'
+//     },
+//     {
+//         title: 'juice',
+//         price: 27,
+//         image: 'https://images-na.ssl-images-amazon.com/images/I/61jL2GCuKLL._SX679_PIbundle-24,TopRight,0,0_AA679SH20_.jpg'
+//     },
+//     {
+//         title: 'tomato',
+//         price: 47,
+//         image: 'https://dictionary.cambridge.org/ru/images/thumb/tomato_noun_001_17860.jpg?version=5.0.74'
+//     },
+//     {
+//         title: 'tea',
+//         price: 15,
+//         image: 'https://yogiproducts.com/wp-content/uploads/2009/03/YT-US-CAR-RelaxedMind-C23-202201-V2-3DFront_withGlow-300DPI-1.png'
+//     },
+// ];
+//
+// ШАБЛОН
+// <div class="product-card">
+//     <h3 class="product-title">TITLE. Price - PRICE</h3>
+// <img src="IMAGE" alt="" class="product-image">
+// </div>
+// Замість TITLE PRICE IMAGE - підставити відповідні поля з об'єкту
+//
+//
+//
+// --------------------
+//     є масив
 // let users = [
-//      { name:'Anna',username: 'Pupkina', pasword: 2020},
-//      { name:'Vova', username: 'Pupkin', pasword: 2025},
-// ]
-// console.log(users[0].pasword)
-// - Є змінна х, якій ви надаєте довільне числове значення.
-//     Якщо змінна x не дорівнює нулю, виведіть 'Вірно', інакше виведіть 'Невірно'. Перевірте  скрипт при a, що дорівнює 1, 0, -3
-// let x = 25;
-// if (x !== 25) {
-//     console.log(true)
-// } else {
-//     console.log(false)
-// }
-// - Дано змінну time яка рівна числу від 0 до 59. Потрібно написати код, який перевірить, до якої четверті години попадає число
-// (в першу, другу, третю или четверту частину години).
-// let time = 40;
-// if (time >0 && time <=15) {
-//     console.log('перша частина години');
-// } else if (time >15 && time <= 30) {
-//     console.log('друга частина години');
-// } else if (time >30 && time <= 45) {
-//     console.log('третя частина години');
-// } else if (time >45 && time <=59) {
-//     console.log('четверта частина години');
-// }
-//
-//У змінній day дано якесь число від 1 до 31. Потрібно визначити, у яку половину(декаду) місяця потрапляє це число (у першу, другу чи третю).
-// let day = 25;
-// if (day >0 && day <=10) {
-//     console.log('Перша декада місяця');
-// } else if (day >10 && day <=20) {
-//     console.log('Друга декада місяця');
-// }else if (day >20 && day<=31) {
-//     console.log('Третя декада місяця')
-// }
-// let dayWeek = 3;
-// switch (dayWeek) {
-//     case 1:
-//         console.log('Monday');
-//         break
-//     case 2:
-//         console.log('Thursday');
-//         break
-//     case 3:
-//         console.log('Theerday');
-//         break
-//     default:
-//         console.log('????')
-/
-for (let i = 0; i < array.length; i++) {
-    const arrayElement = array[i];
-    
-}
+//     {name: 'vasya', age: 31, status: false},
+//     {name: 'petya', age: 30, status: true},
+//     {name: 'kolya', age: 29, status: true},
+//     {name: 'olya', age: 28, status: false},
+//     {name: 'max', age: 30, status: true},
+//     {name: 'anya', age: 31, status: false},
+//     {name: 'oleg', age: 28, status: false},
+//     {name: 'andrey', age: 29, status: true},
+//     {name: 'masha', age: 30, status: true},
+//     {name: 'olya', age: 31, status: false},
+//     {name: 'max', age: 31, status: true}
+// ];
+// за допомоги циклу вивести:
+//     - користувачів зі статусом true
+// - користувачів зі статусом false
+// - користувачів які старші за 30 років

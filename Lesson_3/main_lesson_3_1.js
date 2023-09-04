@@ -9,14 +9,14 @@ for (let i = 0; i <= 10; i++) {
 }
 // - За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом всередині.
 
-let temp = 1;
+let temp = 0;
 while (temp <= 20) {
     document.write(`<h1> love of learning </h1>`);
     temp++;
 }
 // - За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом і індексом всередині.
 
-let i = 1;
+let i = 0;
 while (i <= 20) {
     document.write(`<h1>bloc ${i} </h1>`);
     i++;
