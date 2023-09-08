@@ -44,32 +44,26 @@ function paragrafUl(text){
     document.write(`</ul>`);
 }
 paragrafUl('work, life, life' );
-paragrafUl('life, life, life' );
 
 // /* - створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий. Кількість li визначається другим аргументом, який є числовим (тут використовувати цикл) */
-// function createListWithItems(text, count) {
-//     const ul = document.createElement("ul");
-//     for (let i = 0; i < count; i++) {
-//         const li = document.createElement("li");
-//         li.textContent = text;
-//         ul.appendChild(li);
-//     }
-//     return ul;
-// }
-// const list = createListWithItems("Text", 3);
-// document.body.appendChild(list);
-//
+function paragrafL(text, nomer){
+    document.write(`<ul>`);
+    for (let i = 0; i < nomer; i++) {
+        document.write(`<li> ${text} </li>`);
+
+    }
+    document.write(`</ul>`);
+}
+paragrafL('work, work, work', 5 );
+
 // /*- створити функцію яка приймає масив примітивних елементів (числа,стрінги,булеві), та будує для них список */
-// function createListFromArray(arr) {
-//     const ul = document.createElement('ul');
-//     for (let i = 0; i < arr.length; i++) {
-//         const li = document.createElement('li');
-//         li.textContent = arr[i];
-//         ul.appendChild(li);
-//     }
-//     return ul;
-// }
-// const myBox = [1, "two", true, "four"];
-// const bigList = createListFromArray( myBox);
-// document.body.appendChild(bigList);
+function fromArray (arr){
+    document.write(`<ul>`);
+    for (let arrElement of arr) {
+        document.write(`<li> ${arr} </li>`);
+    }
+    document.write(`</ul>`);
+}
+fromArray([123,'sing', 'song',true,false] );
+
 
