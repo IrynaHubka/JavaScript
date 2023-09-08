@@ -1,89 +1,75 @@
 /* - створити функцію яка обчислює та повертає площу прямокутника зі сторонами а і б */
-
-function areaRectangle(a, b) {
-    let area = a * b;
-    return area;
+function cutP (a,b){
+    return a * b;
 }
-let result = areaRectangle(5, 10);
-console.log(result);
+console.log(cutP(10,7));
 
-/* - створити функцію яка обчислює та повертає площу кола з радіусом r */
-function areaCircle(r) {
-    let area_C = Math.PI * Math.pow(r, 2);
-    return area_C;
+// /* - створити функцію яка обчислює та повертає площу кола з радіусом r */
+function coloR (r){
+    return 3.14 * r * r;
 }
-let resultat = areaCircle(5);
-console.log(resultat);
+console.log (coloR(5));
 
-/*- створити функцію яка обчислює та повертає площу циліндру висотою h, та радіуcом r */
-function cylinderArea(r, h) {
-const baseArea = Math.PI * r ** 2;
-const lateralArea = 2 * Math.PI * r * h;
-const totalArea = baseArea + lateralArea;
-return totalArea;
+// /*- створити функцію яка обчислює та повертає площу циліндру висотою h, та радіуcом r */
+function cylinderR (h,r){
+    return (2 * Math.PI * r * r) + (2 * Math.PI * r * h);
 }
-const r = 5;
-const h = 10;
-const area = cylinderArea(r, h);
-console.log(area);
+console.log(cylinderR(14, 7));
+console.log(cylinderR(13, 4));
 
-/* - створити функцію яка приймає масив та виводить кожен його елемент */
+// /* - створити функцію яка приймає масив та виводить кожен його елемент */
 function elements(arr) {
-    for (let i = 0; i < arr.length; i++) {
-        console.log(arr[i]);
+    for (let item of arr) {
+        console.log(item);
+
     }
-} let myArray = [1, 2, 3, 4, 5];
-elements(myArray);
+}
+elements([8, 10, 9, 'school']);
 
 /* - створити функцію яка створює параграф з текстом. Текст задати через аргумент */
-function createParagraph(text) {
-    let paragraph = document.createElement("p");
-    paragraph.textContent = text;
-    return paragraph;
+function paragrafT(text){
+    document.write(`<p> ${text} </p>`);
 }
-let myText = "Hello World";
-let myParagraph = createParagraph(myText);
-document.body.appendChild(myParagraph);
+paragrafT('work, life, life' );
 
-/* - створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий */
-function createList(text) {
-    let myList = document.createElement("ul");
-    for (let i = 1; i <= 3; i++) {
-        let listItem = document.createElement("li");
-        listItem.textContent = text;
-        myList.appendChild(listItem);
-    }
-    return myList;
+// /* - створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий */
+
+function paragrafUl(text){
+    document.write(`<ul>`);
+
+        document.write(`<li> ${text} </li>`);
+        document.write(`<li> ${text} </li>`);
+        document.write(`<li> ${text} </li>`);
+
+    document.write(`</ul>`);
 }
-let myWords = "This is life";
-let myList = createList(myWords);
-document.body.appendChild(myList);
+paragrafUl('work, life, life' );
+paragrafUl('life, life, life' );
 
-
-/* - створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий. Кількість li визначається другим аргументом, який є числовим (тут використовувати цикл) */
-function createListWithItems(text, count) {
-    const ul = document.createElement("ul");
-    for (let i = 0; i < count; i++) {
-        const li = document.createElement("li");
-        li.textContent = text;
-        ul.appendChild(li);
-    }
-    return ul;
-}
-const list = createListWithItems("Text", 3);
-document.body.appendChild(list);
-
-/*- створити функцію яка приймає масив примітивних елементів (числа,стрінги,булеві), та будує для них список */
-function createListFromArray(arr) {
-    const ul = document.createElement('ul');
-    for (let i = 0; i < arr.length; i++) {
-        const li = document.createElement('li');
-        li.textContent = arr[i];
-        ul.appendChild(li);
-    }
-    return ul;
-}
-const myBox = [1, "two", true, "four"];
-const bigList = createListFromArray( myBox);
-document.body.appendChild(bigList);
+// /* - створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий. Кількість li визначається другим аргументом, який є числовим (тут використовувати цикл) */
+// function createListWithItems(text, count) {
+//     const ul = document.createElement("ul");
+//     for (let i = 0; i < count; i++) {
+//         const li = document.createElement("li");
+//         li.textContent = text;
+//         ul.appendChild(li);
+//     }
+//     return ul;
+// }
+// const list = createListWithItems("Text", 3);
+// document.body.appendChild(list);
+//
+// /*- створити функцію яка приймає масив примітивних елементів (числа,стрінги,булеві), та будує для них список */
+// function createListFromArray(arr) {
+//     const ul = document.createElement('ul');
+//     for (let i = 0; i < arr.length; i++) {
+//         const li = document.createElement('li');
+//         li.textContent = arr[i];
+//         ul.appendChild(li);
+//     }
+//     return ul;
+// }
+// const myBox = [1, "two", true, "four"];
+// const bigList = createListFromArray( myBox);
+// document.body.appendChild(bigList);
 
