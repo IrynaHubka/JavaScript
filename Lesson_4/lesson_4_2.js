@@ -21,3 +21,19 @@ function usersBlok(arr) {
 
 usersBlok(users);
 
+// - створити функцію яка повертає найменьше число з масиву
+const arrayBlok = [534, -10, 20, 0, -80, 2543];
+
+function arrayLittle(arr) {
+    let result = arr[0];
+    for (let i = 1; i < arr.length; i++) {
+        if (result > arr[i]) {
+            result = arr[i];
+        }
+    }
+    return result;
+}
+
+console.log(arrayLittle(arrayBlok));
+
+
