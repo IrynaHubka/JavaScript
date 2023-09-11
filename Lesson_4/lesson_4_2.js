@@ -23,7 +23,6 @@ usersBlok(users);
 
 // - створити функцію яка повертає найменьше число з масиву
 const arrayBlok = [534, -10, 20, 0, -80, 2543];
-
 function arrayLittle(arr) {
     let result = arr[0];
     for (let i = 1; i < arr.length; i++) {
@@ -35,5 +34,17 @@ function arrayLittle(arr) {
 }
 
 console.log(arrayLittle(arrayBlok));
+
+// - створити функцію sum(arr)яка приймає масив чисел, сумує значення елементів масиву та повертає його. Приклад sum([1,2,10]) //->13
+function sum(arr) {
+    let result = 0;
+    for (const number of arr) {
+        result += number;
+    }
+    return result;
+}
+
+console.log(sum([1, 2, 10]));
+
 
 
