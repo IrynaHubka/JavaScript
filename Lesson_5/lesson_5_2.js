@@ -21,7 +21,7 @@ let usersBlok = (arr) => {
 usersBlok(users);
 
 // // - створити функцію яка повертає найменьше число з масиву
-function arrayLittle(arr) {
+let arrayLittle = (arr) => {
     let result = arr[0];
     for (let i = 1; i < arr.length; i++) {
         if (result > arr[i]) {
@@ -33,29 +33,27 @@ function arrayLittle(arr) {
 const arrayBlok = [534, -10, 20, 0, -80, 2543];
 console.log(arrayLittle(arrayBlok));
 
-// // - створити функцію sum(arr)яка приймає масив чисел, сумує значення елементів масиву та повертає його. Приклад sum([1,2,10]) //->13
-// function sum(arr) {
-//     let result = 0;
-//     for (const number of arr) {
-//         result += number;
-//     }
-//     return result;
-// }
-//
-// console.log(sum([1, 2, 10]));
-//
-// // - створити функцію swap(arr,index1,index2). Функція міняє місцями занячення у відповідних індексах
-// // Приклад  swap([11,22,33,44],0,1) //=> [22,11,33,44]
-// function swap(arr, index1, index2) {
-//     const numIndex1 = arr[index1];
-//     arr[index1] = arr[index2];
-//     arr[index2] = numIndex1;
-//
-//     return arr;
-// }
-//
-// console.log(swap([11, 22, 33, 44], 0, 1));
-//
+// - створити функцію sum(arr)яка приймає масив чисел, сумує значення елементів масиву та повертає його. Приклад sum([1,2,10]) //->13
+const sum = (arr) => {
+    let result = 0;
+    for (const number of arr) {
+        result += number;
+    }
+    return result;
+}
+console.log(sum([1, 2, 10]));
+
+// - створити функцію swap(arr,index1,index2). Функція міняє місцями занячення у відповідних індексах
+// Приклад  swap([11,22,33,44],0,1) //=> [22,11,33,44]
+const swap = (arr, index1, index2) => {
+    const numIndex1 = arr[index1];
+    arr[index1] = arr[index2];
+    arr[index2] = numIndex1;
+
+    return arr;
+}
+console.log(swap([11, 22, 33, 44], 0, 1));
+
 // // - Написати функцію обміну валюти exchange(sumUAH,currencyValues,exchangeCurrency)
 // // Приклад exchange(10000,[{currency:'USD',value:40},{currency:'EUR',value:42}],'USD') // => 250
 // function exchange(sum, currencies, resultCurrency) {
