@@ -56,26 +56,24 @@ console.log(swap([11, 22, 33, 44], 0, 1));
 
 // // - Написати функцію обміну валюти exchange(sumUAH,currencyValues,exchangeCurrency)
 // // Приклад exchange(10000,[{currency:'USD',value:40},{currency:'EUR',value:42}],'USD') // => 250
-// function exchange(sum, currencies, resultCurrency) {
-//     for (let cur of currencies) {
-//         if (cur.currency === resultCurrency) {
-//             return `${sum / cur.value} ${resultCurrency}`
-//         }
-//     }
-//     return 'Wrong currency!!!'
-// }
-// const currencies = [
-//     {currency: 'USD', value: 40},
-//     {currency: 'EUR', value: 42},
-//     {currency: 'W', value: 2},
-//     {currency: 'DE', value: 6},
-//     {currency: 'SS', value: 25},
-//     {currency: 'RE', value: 13},
-//     {currency: 'PL', value: 8},
-// ]
-// const result = exchange(10000, currencies, 'DD')
-// console.log('result : ', result)
-//
-//
-//
-//
+exchange = (sum, currencies, resultCurrency) => {
+    for (let cur of currencies) {
+        if (cur.currency === resultCurrency) {
+            return `${sum / cur.value} ${resultCurrency}`
+        }
+    }
+    return 'Wrong currency!!!'
+}
+const currencies = [
+    {currency: 'USD', value: 40},
+    {currency: 'EUR', value: 42},
+    {currency: 'W', value: 2},
+    {currency: 'DE', value: 6},
+    {currency: 'SS', value: 25},
+    {currency: 'RE', value: 13},
+    {currency: 'PL', value: 8},
+]
+const result = exchange(10000, currencies, 'DD')
+console.log('result : ', result)
+
+
