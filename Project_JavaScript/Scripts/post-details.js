@@ -57,9 +57,9 @@ fetch(`https://jsonplaceholder.typicode.com/posts/${post.id}/comments`)
             commentEl.setAttribute('class', 'comment');
 
 
-            const postIdEl = document.createElement('div');
-            postIdEl.innerText = `PostId : ${comment.postId}`
-            commentEl.appendChild(postIdEl);
+            // const postIdEl = document.createElement('div');
+            // postIdEl.innerText = `PostId : ${comment.postId}`
+            // commentEl.appendChild(postIdEl);
 
             const idEl = document.createElement('div');
             idEl.innerText = `Id : ${comment.id}`;
