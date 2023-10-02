@@ -6,14 +6,14 @@
 }
 
 .details {
-    background-color: lightpink;
+    background-color: #535353;
 }
 
 .userKey {
     padding: 5px;
     margin: 10px;
     color: white;
-    background-color: #6997d0;
+    background-color: #9C9898;
 
 }
 
@@ -21,7 +21,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: lightpink;
+    background-color: #D9D9D9;
 }
 
 .button {
@@ -30,8 +30,8 @@
     width: 90%;
     margin-left: 5%;
     color: white;
-    background-color: lightpink;
-    border-color: #6997d0;
+    background-color: #535353;
+    border-color: #9C9898;
 }
 
 .postsEl {
@@ -49,15 +49,16 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: lightpink;
+    color: #535353;
     border: #c88a61 1px solid;
     border-radius: 5px;
 }
 
 .postButton {
     text-align: center;
-    width: 25%;
-    color: white;
-    background-color: lightpink;
-    border-color: #6997d0;
+    width: 10%;
+    color: black;
+    background-color: #D9D9D9;
+    border-color: #9C9898;
+    border-radius: 5px;
 }
