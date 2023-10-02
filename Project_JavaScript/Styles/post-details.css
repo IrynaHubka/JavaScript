@@ -9,13 +9,13 @@
 }
 
 .postKey {
-    background-color: #6997d0;
+    background-color: #535353;
     padding: 7px;
 }
 
 .comments {
     width: 100%;
-    background-color: lightpink;
+    background-color: #9C9898;
     display: flex;
     flex-wrap: wrap;
 }
@@ -26,6 +26,6 @@
     width: 25%;
     height: 350px;
     color: white;
-    border: #6997d0 1px solid;
+    border: lightpink 1px solid;
     border-radius: 5px;
 }
