@@ -69,7 +69,7 @@ button.onclick = function () {
 
                 let postButton = document.createElement('button');
                 postButton.setAttribute('class', 'postButton');
-                postButton.innerText = 'show more';
+                postButton.innerText = 'more';
 
                 postButton.onclick = function () {
                     let postClick = JSON.stringify(post);
