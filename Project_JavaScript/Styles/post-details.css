@@ -1,11 +1,11 @@
 .full {
-    background-color: lightpink;
+    background-color: #D9D9D9;
 }
 
 .postEl {
     padding: 5px;
     color: white;
-    background-color: lightpink;
+    background-color: #D9D9D9;
 }
 
 .postKey {
@@ -26,6 +26,6 @@
     width: 25%;
     height: 350px;
     color: white;
-    border: lightpink 1px solid;
+    border: #535353 1px solid;
     border-radius: 5px;
 }
