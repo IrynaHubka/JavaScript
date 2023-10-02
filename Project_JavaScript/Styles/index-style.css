@@ -10,7 +10,7 @@
 }
 
 .divUser{
-    background: #6997d0;
+    background: #535353;
     width: 48%;
     height: 100px;
     align-items: center;
@@ -20,13 +20,14 @@
     border-radius: 5px;
     display: flex;
     flex-direction: column;
-    color: white;
+    color: black;
 }
 
 .button{
     margin: 10px;
     width: 50%;
     height: 40px;
-    background: #6997d0;
-    color: white;
+    background: #9C9898;
+    color: #D9D9D9;
+    border-radius: 5px;
 }
